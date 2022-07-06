@@ -133,8 +133,8 @@ export const MultiMintButton = ({
     function updateMintCount(target: any) {
         var value = parseInt(target.value);
         if (!isNaN(value)) {
-            if (value > 10) {
-                value = 10;
+            if (value > 100) {
+                value = 100;
                 target.value = "" + value;
             } else if (value < 1) {
                 value = 1;
