@@ -110,7 +110,7 @@ export const MultiMintButton = ({
         var numericField = document.querySelector(".mint-qty") as HTMLInputElement;
         if (numericField) {
             var value = parseInt(numericField.value);
-            if (!isNaN(value) && value < 100) {
+            if (!isNaN(value) && value < 50) {
                 value++;
                 numericField.value = "" + value;
                 updateAmounts(value);
@@ -133,8 +133,8 @@ export const MultiMintButton = ({
     function updateMintCount(target: any) {
         var value = parseInt(target.value);
         if (!isNaN(value)) {
-            if (value > 100) {
-                value = 100;
+            if (value > 50) {
+                value = 50;
                 target.value = "" + value;
             } else if (value < 1) {
                 value = 1;
