@@ -613,7 +613,7 @@ const Home = (props: HomeProps) => {
                               /* 87 is itemsRemaining 200 is itemsAvailable*/
                               <h3>TOTAL MINTED : {903} / {1000}</h3>}
                             {wallet && isActive && <BorderLinearProgress variant="determinate"
-                                                                         value={1000 - (97 * 100 / 1000)}/>}
+                                                                         value={100 - (97 * 100 / 1000)}/>}
                             <br/>
                             <MintButtonContainer>
                                 {!isActive && !isEnded && candyMachine?.state.goLiveDate && (!isWLOnly || whitelistTokenBalance > 0) ? (
